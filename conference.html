@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conference registration</title>
+        <!-- link to google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+<!-- link to css stylesheet-->        
+<link href="conference-style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1> conference registration form</h1>
+        <form>
+            <!-- all the inputs in form with breaks-->
+            Enter your name<input type="text" maxlength="70" name="name" required>
+            </br>Enter password<input type="password" name="password"required>
+            </br>T-shirt size 
+            <select required name="tshirt">
+                <!-- empty values for options to make one of them required-->
+                <option value="">Small</option>
+                <option value="">Medium</option>
+                <option value="">Large</option>
+            </select>
+            </br>Date of birth <input type="date" name="dob" required>
+            </br>Do you want to recieve email?
+            </br>
+            <!-- radio buttoms have same name to make one of them required-->
+            <input name="email" type="radio" required>Yes
+            <input name="email" type="radio" required>No
+            </br>
+            Choose sessions 
+            <input type="checkbox" name="Morning">Morning
+            <input type="checkbox" name="afternoon">Afternoon
+            </br>
+            Any special requests</br>
+            <!-- text area with size specified-->
+            <textarea rows="7" cols="70" name="requests">Type requests here</textarea>
+            </br>
+            <input type="submit" name="submit">
+        </form>
+    </body>
+</html>

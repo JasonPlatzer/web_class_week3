@@ -1,0 +1,13 @@
+
+/* for missile_test */
+/* giving each link a different color */
+#real-alert{
+    color:darkred;
+}
+#test-only{
+    color: lawngreen;
+}
+/* setting how to display missile link class */
+.missile-link{
+    display: inline;
+}

@@ -1,0 +1,9 @@
+body{
+ /* changes color of background  */
+    height: 800px;
+    background-image: linear-gradient(#8f78ad, #1c053a);
+
+}
+h1{
+    font-family: 'Hachi Maru Pop', cursive;
+}

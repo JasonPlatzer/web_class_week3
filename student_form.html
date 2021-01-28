@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Form</title>
+        <!-- link to bootstrap to use their classes-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- link to stylesheet-->
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- 2 links to google fonts to use their fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    </head>
+    <body class="m-3">
+        <!-- making a jumbotron with text-->
+        <div class="jumbotron">
+            <h1>Please provide feedback. You may do so anonymously.</h1>
+        </div>
+        <!-- making a row to seperate into columns-->
+        <div class="row">
+            <!-- making a medium column-->
+        <div class="col-md-5">
+            <!-- giving column a margin-->
+            <div class="mx-5">
+            <p>Pleases submit user feedback</p>
+            <p>your feedback is important to us</p>
+        </div>
+        </div>
+        <!-- making a seperate column-->
+        <div class="col-md-7">
+            <!-- making a form filled with inputs-->
+        <form class="mx-5">
+            <!-- using labels for input text and making inputs after that-->
+            <label for="name">Name</label><input id="name"
+            type="text"name="student-name" class="form-control">
+            </br><label for="email">Email</label><input id="email"
+            type="email" name="student-email" class="form-control">
+            </br><label for="comments">Comments</label><br></label><textarea id="comments"
+            name="student-comments" required class="form-control"></textarea></br>
+            
+            <p>Are you a student?</br>
+                <!-- using form classes for radio inputs-->
+            <div class="form-check">
+                <input id="student"name="if-student" type="radio" checked class="form-check-input">
+                <!-- label for radio button-->
+                <label for="student" class="form-check-label">Yes</label>
+            <!-- doing same things for a second button-->
+            </div>
+            <div class="form-check">
+            <input id="student" name="if-student" type="radio" class="form-check-input">
+            <label for="student" class="form-check-label">No</label></br>
+            <input type="submit" class=" btn btn-success mt-4">
+            </div>
+
+        </form>
+        </div>
+        </div>
+        
+
+    </body>
+
+</html>
